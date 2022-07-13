@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,7 +201,9 @@
             }
            }
            //cost
-           function display()
+          
+    }
+    function display()
 		{
 
 			var n=document.getElementById("hotel1").checked;
@@ -209,12 +212,12 @@
 			var o=document.getElementById("hotel4").checked;
 			var c=document.getElementById("cost").checked;
 
-			if(c == true)
-			{
+			// if(c == true)
+			// {
 				if( n || k ==true)
 				{
 						
-						document.getElementById("result").innerHTML= document.getElementById("days").value*2000 ; ;
+						document.getElementById("cost").innerHTML= document.getElementById("days").value*2000 ; ;
 
 				}
 				// rent=d*2000;
@@ -222,17 +225,16 @@
 
 				else if( s || o ==true)
 				{
-						document.getElementById("result").innerHTML= document.getElementById("days").value*3000 ;
+						document.getElementById("cost").innerHTML= document.getElementById("days").value*3000 ;
 				// rent=d*3000;
 				// return d;
 				}
-			}
+			//}
 			else{
 				alert("You are not enter no.of days staying");
 				return false;
 			}
         }
-    }
         let i=0;
         function bgimage()
         {
